@@ -1,32 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
     <link rel="stylesheet" href="index.css">
-    <script src="index.js"></script>
+    <script src="index.js" defer></script>
 </head>
+
 <body>
+    <h2>Seja bem vindo a minha Calculadora</h2>
     <h1 id="resultado">Resultado</h1>
-    <div>
-        <button onclick="attValor('0')">0</button>
-        <button onclick="attValor('1')">1</button>
-        <button onclick="attValor('2')">2</button>
-        <button onclick="attValor('3')">3</button>
-        <button onclick="attValor('4')">4</button>
-        <button onclick="attValor('5')">5</button>
-        <button onclick="attValor('6')">6</button>
-        <button onclick="attValor('7')">7</button>
-        <button onclick="attValor('8')">8</button>
-        <button onclick="attValor('9')">9</button>
-    </div>
-    <div>
-        <button onclick="escolhaOperacao('+')">+</button>
-        <button onclick="escolhaOperacao('-')">-</button>
-        <button onclick="escolhaOperacao('*')">*</button>
-        <button onclick="escolhaOperacao('/')">/</button>
-        <button onclick="calcular('=')">=</button>
-    </div>
+    <div id="display">0</div>
+    <div class="buttons">
+        <div class="number-buttons">
+            <div class="grid-button">
+                <button onclick="attValor('7')">7</button>
+                <button onclick="attValor('8')">8</button>
+                <button onclick="attValor('9')">9</button>
+                <button onclick="attValor('4')">4</button>
+                <button onclick="attValor('5')">5</button>
+                <button onclick="attValor('6')">6</button>
+                <button onclick="attValor('1')">1</button>
+                <button onclick="attValor('2')">2</button>
+                <button onclick="attValor('3')">3</button>
+                <div></div>
+                <button onclick="attValor('0')">0</button>               
+                
+            </div>
+        </div>
+        <div class="operation-buttons">
+            <div class="grid-operation">
+                <button onclick="escolhaOperacao('+')">+</button>
+                <button onclick="escolhaOperacao('-')">-</button>
+                <button onclick="escolhaOperacao('*')">*</button>
+                <button onclick="escolhaOperacao('/')">/</button>
+                <button onclick="calcular()">=</button>
+                <button onclick="limpar()">C</button>
+            </div>
+        </div>
 </body>
+
 </html>

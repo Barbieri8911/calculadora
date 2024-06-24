@@ -1,19 +1,83 @@
-body{
+/* Estilos básicos para o corpo */
+body {
     width: 100vw;
     height: 100vw;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0;
+    background: #5050e2;
 }
 
-h1{
+/* Estilos para o título */
+h1 {
     margin: 5%;
+    color: #333;
+    height: auto;
+    width: auto;
 }
 
-button{
-    width: 8vw;
-    height: 3vw;
-    margin: 2vw;
+h2{
+    height: auto;
+    width: auto;
+    color: #13dabf;
 }
+
+/* Container para os botões */
+.buttons {
+
+    padding: 20px;
+    background: #5050e2;
+    height: 10vw;
+    color: #c0392b;
+}
+/* Estilos para os botões */
+button {
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #000000;
+    background: #4caf50;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.grid-button{
+    width: 20vw;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+.grid-operation{
+    display: grid;
+    flex-direction: column;
+    position: absolute;
+    margin: 20%;
+    top: 64%;
+}
+
+button:active {
+    background: #45a049;
+}
+
+/* Diferenciação de botões de operação */
+.operation-buttons button {
+    background: #f39c12;
+}
+
+.operation-buttons button:active {
+    background: #e67e22;
+}
+
+/* Estilo para o botão de limpar */
+.operation-buttons button:last-child {
+    background: #e74c3c;
+}
+
+.operation-buttons button:last-child:active {
+    background: #c0392b;
+}
+
